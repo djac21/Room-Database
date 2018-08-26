@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Room Database</string>
+    <string name="search">Search</string>
+    <string name="text">Text</string>
+    <string name="title">Title</string>
+    <string name="set_date">Set Date</string>
+</resources>
