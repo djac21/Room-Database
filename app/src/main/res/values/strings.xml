@@ -4,4 +4,5 @@
     <string name="text">Text</string>
     <string name="title">Title</string>
     <string name="set_date">Set Date</string>
+    <string name="delete_all">Delete All</string>
 </resources>

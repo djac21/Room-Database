@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     private ListViewModel viewModel;
     private RecyclerViewAdapter recyclerViewAdapter;
-    private RecyclerView recyclerView;
     private static final String TAG = MainActivity.class.getSimpleName();
     private Date date;
     private Calendar calendar;
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView = findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerViewAdapter = new RecyclerViewAdapter(new ArrayList<Model>());
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(recyclerViewAdapter);
