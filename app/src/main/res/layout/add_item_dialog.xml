@@ -23,8 +23,9 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/title"
                 android:singleLine="true"
-                android:textColor="@color/colorPrimary"
-                android:textColorHighlight="@color/colorAccent" />
+                android:textColor="#909090"
+                android:textColorHighlight="@color/grey_700"
+                android:textColorHint="@color/amber_100"/>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -42,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/text"
                 android:singleLine="true"
-                android:textColor="@color/colorPrimary"
-                android:textColorHighlight="@color/colorAccent" />
+                android:textColor="#909090"
+                android:textColorHighlight="@color/grey_700" />
 
         </android.support.design.widget.TextInputLayout>
 

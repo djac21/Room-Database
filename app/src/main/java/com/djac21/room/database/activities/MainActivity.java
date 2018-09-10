@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this)
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.AlertDialog)
                 .setTitle("Add item")
                 .setView(dialogLayout)
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     @Override
     public void itemLongClicked(final View view, int position) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this)
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.AlertDialog)
                 .setTitle("Delete Item?")
                 .setMessage("Are you sure you want to delete the current entry")
                 .setNegativeButton("Cancel", null)
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         if (item.getItemId() == android.R.id.home) {
             finish();
         } else if (item.getItemId() == R.id.delete) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this)
+            AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.AlertDialog)
                     .setTitle("Delete Entire Log")
                     .setMessage("Are you sure you want to delete the entire")
                     .setNegativeButton("Cancel", null)
